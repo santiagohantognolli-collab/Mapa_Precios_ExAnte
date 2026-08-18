@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precio del Suelo — San Martín de los Andes</title>
+<style>
+:root{--navy:#1F3864;--blue:#2F5496}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6fa;color:#222}
+.wrap{max-width:900px;margin:0 auto;padding:34px 20px 60px}
+h1{color:var(--navy);font-size:26px;margin:0 0 4px}
+.sub{color:#666;font-size:15px;margin:0 0 24px}
+h3.sec{color:var(--navy);font-size:15px;margin:26px 0 12px;border-bottom:2px solid #e0e6f0;padding-bottom:5px}
+.cards{display:flex;gap:18px;flex-wrap:wrap}
+.card{flex:1 1 250px;background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column}
+.card .top{padding:16px 18px 8px}
+.card h2{color:var(--blue);font-size:17px;margin:0 0 7px}
+.card p{font-size:13px;line-height:1.5;color:#444;margin:0 0 6px}
+.card a.btn{margin:12px 18px 18px;display:block;text-align:center;background:var(--blue);color:#fff;text-decoration:none;padding:10px;border-radius:8px;font-weight:bold;font-size:14px}
+.card a.btn:hover{background:var(--navy)}
+.tag{display:inline-block;font-size:10.5px;background:#eaf1fb;color:var(--blue);padding:2px 8px;border-radius:10px;margin-bottom:7px}
+.tagc{background:#e6f0f6;color:#084081}
+.note{margin-top:28px;font-size:12.5px;color:#777;line-height:1.6;border-top:1px solid #e0e0e0;padding-top:15px}
+</style></head><body><div class="wrap">
+<h1>Precio del suelo — San Martín de los Andes</h1>
+<p class="sub">Observatorio de Valores de Suelo · Regression-Kriging · 384 puntos verificados uno a uno</p>
+
+<h3 class="sec">Mapas de precio del suelo</h3>
+<div class="cards">
+  <div class="card"><div class="top"><span class="tag">Recomendado</span><h2>Precio a lote de 600 m²</h2>
+    <p>Precio del suelo estimado (USD/m²) referido a un lote típico de 600 m². La lectura estándar de la estructura de precios.</p>
+  </div><a class="btn" href="precios_suelo_600.html">Abrir →</a></div>
+  <div class="card"><div class="top"><span class="tag">Comparación</span><h2>Precio a lote de 300 m²</h2>
+    <p>Lo mismo referido a un lote chico de 300 m² (típico céntrico). Misma estructura, valores más altos. Sirve para comparar.</p>
+  </div><a class="btn" href="precios_suelo_300.html">Abrir →</a></div>
+  <div class="card" style="max-width:290px"><div class="top"><span class="tag tagc">Diagnóstico</span><h2>Mapa de confianza</h2>
+    <p>Dónde el mapa es firme (muchos avisos cerca) y dónde es apenas una hipótesis. La honestidad del modelo, a la vista.</p>
+  </div><a class="btn" href="confianza.html">Abrir →</a></div>
+</div>
+
+<p class="note"><b>Cómo leer:</b> el color de las zonas es el precio del suelo estimado (USD/m²) referido a un lote de 600 o 300 m², solo sobre suelo edificable del catastro. Precio de <b>oferta</b> (lo que se pide). Modelo: Regression-Kriging (tamaño de lote + distancia al centro + zona catastral + kriging de residuos), validación cruzada R²=0,78. El mapa de confianza indica dónde confiar en la estimación.</p>
+</div></body></html>
